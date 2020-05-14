@@ -17,7 +17,8 @@
     </tr>
     <c:forEach items="${cs}" var="c" varStatus="st">
         <tr>
-            <td>${c.id}</td>
+            <%--st是遍历到的项目，index是序号属性，从0开始标号--%>
+            <td>${st.index+1}</td>
             <td>${c.name}</td>
 
         </tr>
